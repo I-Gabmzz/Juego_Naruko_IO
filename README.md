@@ -1,20 +1,24 @@
 # Naruko Survivors: Hokage Rush
 
-Prototipo mejorado de juego tipo **Vampire Survivors** inspirado en Naruto, hecho en **HTML5 Canvas + JavaScript vanilla**.
+Prototipo tipo **Vampire Survivors** inspirado en Naruto, con UI mejorada, sistema de oleadas y soporte para sprites.
 
-## Mejoras incluidas
+## Novedades principales
 
-- HUD más completo: vida, nivel, EXP, tiempo, bajas y oleada.
-- Sistema de combate más profundo:
-  - Kunai automático.
-  - Shuriken triple periódico.
-  - Pulso de rasengan en área.
-- Enemigos variados (rápidos, tanque y estándar) con escalado progresivo.
-- Dash ninja con invulnerabilidad breve.
-- Subida de nivel con selección de mejoras.
-- Pantalla de inicio, pausa táctica y game over mejorado.
-- Efectos visuales (anillos de impacto y partículas de chakra).
-- Servidor Node incluido para evitar errores de preview tipo `Not Found`.
+- HUD completo + pantallas de inicio y selección de mejoras.
+- Soporte para sprites del jugador y enemigo.
+- Sistema de progresión actualizado:
+  - **Cada nivel múltiplo de 5** abre mejoras normales.
+  - **Cada nivel múltiplo de 6** abre mejoras especiales.
+- Habilidades: kunai automático, shuriken triple, rasengan de área y dash.
+
+## Sprites
+
+Coloca tus imágenes en `assets/`:
+
+- `assets/naruto.png`
+- `assets/enemy_ninja.png`
+
+> Si no están, el juego sigue funcionando con gráficos fallback.
 
 ## Controles
 
@@ -28,13 +32,13 @@ Prototipo mejorado de juego tipo **Vampire Survivors** inspirado en Naruto, hech
 npm start
 ```
 
-Abrir en navegador:
+Abre:
 
 ```text
 http://localhost:8000
 ```
 
-## Validación rápida
+## Validación
 
 ```bash
 npm run check
