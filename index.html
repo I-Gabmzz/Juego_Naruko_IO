@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naruko Survivors: Hokage Rush</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <aside class="hud panel">
+      <h1>Naruko Survivors</h1>
+      <p class="subtitle">Hokage Rush • Prototipo mejorado</p>
+
+      <div class="stats-grid">
+        <article class="card"><span>Vida</span><strong id="hp">0 / 0</strong></article>
+        <article class="card"><span>Nivel</span><strong id="level">1</strong></article>
+        <article class="card"><span>EXP</span><strong id="exp">0 / 20</strong></article>
+        <article class="card"><span>Tiempo</span><strong id="time">0s</strong></article>
+        <article class="card"><span>Bajas</span><strong id="kills">0</strong></article>
+        <article class="card"><span>Oleada</span><strong id="wave">1</strong></article>
+      </div>
+
+      <section class="legend panel-soft">
+        <h2>Controles</h2>
+        <ul>
+          <li><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> Mover</li>
+          <li><kbd>Shift</kbd> Dash ninja</li>
+          <li><kbd>P</kbd> Pausa</li>
+          <li>Habilidades: kunais, shuriken triple y rasengan automático</li>
+        </ul>
+      </section>
+
+      <section class="legend panel-soft">
+        <h2>Objetivo</h2>
+        <p>Sobrevive y derrota oleadas Akatsuki. Cada nivel te ofrece una mejora.</p>
+      </section>
+
+      <button id="restart" hidden>Reiniciar partida</button>
+    </aside>
+
+    <section class="game-wrap panel">
+      <canvas id="game" width="1280" height="720" aria-label="Naruko Survivors"></canvas>
+      <p id="overlay" class="overlay">Cargando campo de batalla...</p>
+
+      <div id="start-screen" class="screen visible">
+        <h2>¡Bienvenido shinobi!</h2>
+        <p>Resiste hordas, sube de nivel y mejora tus jutsus.</p>
+        <button id="start-game">Comenzar misión</button>
+      </div>
+
+      <div id="upgrade-screen" class="screen" aria-live="polite">
+        <h2>Subida de nivel</h2>
+        <p>Elige una mejora:</p>
+        <div id="upgrade-options" class="upgrade-options"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
