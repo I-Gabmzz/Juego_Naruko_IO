@@ -10,7 +10,7 @@
   <main class="layout">
     <aside class="hud panel">
       <h1>Naruko Survivors</h1>
-      <p class="subtitle">Hokage Rush • Prototipo mejorado</p>
+      <p class="subtitle">Hokage Rush • versión con sprites y mejoras</p>
 
       <div class="stats-grid">
         <article class="card"><span>Vida</span><strong id="hp">0 / 0</strong></article>
@@ -27,13 +27,13 @@
           <li><kbd>WASD</kbd> / <kbd>↑↓←→</kbd> Mover</li>
           <li><kbd>Shift</kbd> Dash ninja</li>
           <li><kbd>P</kbd> Pausa</li>
-          <li>Habilidades: kunais, shuriken triple y rasengan automático</li>
+          <li>Subida cada 5 niveles; nivel 6, 12, 18... mejora especial</li>
         </ul>
       </section>
 
       <section class="legend panel-soft">
         <h2>Objetivo</h2>
-        <p>Sobrevive y derrota oleadas Akatsuki. Cada nivel te ofrece una mejora.</p>
+        <p>Sobrevive, mejora tu build y domina oleadas enemigas con jutsus.</p>
       </section>
 
       <button id="restart" hidden>Reiniciar partida</button>
@@ -45,13 +45,13 @@
 
       <div id="start-screen" class="screen visible">
         <h2>¡Bienvenido shinobi!</h2>
-        <p>Resiste hordas, sube de nivel y mejora tus jutsus.</p>
+        <p>Resiste hordas, sube de nivel y evoluciona tus técnicas.</p>
         <button id="start-game">Comenzar misión</button>
       </div>
 
       <div id="upgrade-screen" class="screen" aria-live="polite">
-        <h2>Subida de nivel</h2>
-        <p>Elige una mejora:</p>
+        <h2 id="upgrade-title">Subida de nivel</h2>
+        <p id="upgrade-subtitle">Elige una mejora:</p>
         <div id="upgrade-options" class="upgrade-options"></div>
       </div>
     </section>
